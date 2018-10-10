@@ -13,7 +13,7 @@ var myComponent = /** @class */ (function () {
     myComponent = __decorate([
         core_1.Component({
             selector: 'mycomp',
-            template: '<strong>Hello World</strong>'
+            templateUrl: '../app/my-component.html'
         })
     ], myComponent);
     return myComponent;

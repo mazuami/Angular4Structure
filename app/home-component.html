@@ -1,0 +1,26 @@
+<div> Home Component </div>
+<div class="panel panel-default">
+    <div class ="panel-heading panel-heading-custom">
+            <h3 class="headerStyle"> File Upload </h3>
+    </div>
+    <div class="panel-body">
+            <div class ="row form-group">
+                          <div class="col-md-3">
+                          </div>
+                          <div class="col-md-6">
+                            <input  class="form-control"  type="file" (change)="fileSelection($event)"  placeholder="upload file" >
+                          </div>
+                          <div class="col-md-3">
+                          </div>
+            </div>
+            <div class="row form-group">
+                        <div class="col-md-5">
+                        </div>
+                        <div class="col-md-2">
+                            <button type="button" class="btn btn-info" (click)="onUpload($event)">Upload file</button>     
+                        </div>
+                        <div class="col-md-5">
+                        </div>
+            </div>
+    </div>
+</div>

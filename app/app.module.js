@@ -9,13 +9,17 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
 var my_component_1 = require("./my.component");
+var home_controller_1 = require("./home.controller");
+var http_1 = require("@angular/http");
+var forms_1 = require("@angular/forms");
+//import { MdButtonModule, MdCardModule, MdMenuModule, MdToolbarModule, MdIconModule } from '@angular/material';
 var AppModule = /** @class */ (function () {
     function AppModule() {
     }
     AppModule = __decorate([
         core_1.NgModule({
-            imports: [platform_browser_1.BrowserModule],
-            declarations: [my_component_1.myComponent],
+            imports: [platform_browser_1.BrowserModule, http_1.HttpModule, forms_1.FormsModule],
+            declarations: [my_component_1.myComponent, home_controller_1.homeComponent],
             bootstrap: [my_component_1.myComponent]
         })
     ], AppModule);
